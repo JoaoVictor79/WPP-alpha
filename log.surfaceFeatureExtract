@@ -1,0 +1,153 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2506                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _615aae61d7-20250627 OPENFOAM=2506 version=v2506
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceFeatureExtract
+Date   : Jul 19 2025
+Time   : 19:52:17
+Host   : Jorge-PC
+PID    : 23610
+I/O    : uncollated
+Case   : /home/jorge/OpenFOAM/OpenFOAM-v2506/OpenFOAM-JV/WPP-v2
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+Note: Feature line extraction only valid on closed manifold surfaces
+
+Reading surfaceFeatureExtractDict
+
+Surfaces     : innerCylinderSmall.stl
+Output       : innerCylinderSmall
+Load options : offset
+Write options: writeObj=off writeVTK=off
+
+Statistics:
+Triangles    : 572 in 1 region(s)
+Vertices     : 288
+Bounding Box : (-5 -136.987 -45.5404) (20 163.013 254.46)
+
+Constructing feature set from included angle 150
+Selecting edges based purely on geometric tests: no
+Removing features with number of edges < 10
+
+Initial Feature set:
+    points : 0
+    edges  : 288
+    of which
+        region edges   : 0
+        external edges : 288
+        internal edges : 0
+
+Final Feature set:
+    points : 288
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 288
+    edges  : 288
+    of which
+        external edges     : 288
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/jorge/OpenFOAM/OpenFOAM-v2506/OpenFOAM-JV/WPP-v2/constant/extendedFeatureEdgeMesh/innerCylinderSmall.extendedFeatureEdgeMesh"
+
+Writing featureEdgeMesh to "/home/jorge/OpenFOAM/OpenFOAM-v2506/OpenFOAM-JV/WPP-v2/constant/triSurface/innerCylinderSmall.eMesh"
+Surfaces     : outerCylinder.stl
+Output       : outerCylinder
+Load options : offset
+Write options: writeObj=off writeVTK=off
+
+Statistics:
+Triangles    : 792 in 1 region(s)
+Vertices     : 398
+Bounding Box : (-200 -386.937 -295.528) (1000 413.013 504.447)
+
+Constructing feature set from included angle 150
+Selecting edges based purely on geometric tests: no
+Removing features with number of edges < 10
+
+Initial Feature set:
+    points : 0
+    edges  : 398
+    of which
+        region edges   : 0
+        external edges : 398
+        internal edges : 0
+
+Final Feature set:
+    points : 398
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 398
+    edges  : 398
+    of which
+        external edges     : 398
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/jorge/OpenFOAM/OpenFOAM-v2506/OpenFOAM-JV/WPP-v2/constant/extendedFeatureEdgeMesh/outerCylinder.extendedFeatureEdgeMesh"
+
+Writing featureEdgeMesh to "/home/jorge/OpenFOAM/OpenFOAM-v2506/OpenFOAM-JV/WPP-v2/constant/triSurface/outerCylinder.eMesh"
+Surfaces     : turbine.stl
+Output       : turbine
+Load options : offset
+Write options: writeObj=off writeVTK=off
+
+Statistics:
+Triangles    : 8090 in 1 region(s)
+Vertices     : 4001
+Bounding Box : (-0.52 -47.89 -0.774002) (13.517 134.084 209)
+
+Constructing feature set from included angle 150
+Selecting edges based purely on geometric tests: no
+Removing features with number of edges < 10
+
+Initial Feature set:
+    points : 0
+    edges  : 908
+    of which
+        region edges   : 11
+        external edges : 107
+        internal edges : 790
+
+Final Feature set:
+    points : 919
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 919
+    edges  : 908
+    of which
+        external edges     : 107
+        internal edges     : 790
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 11
+
+Writing extendedFeatureEdgeMesh to "/home/jorge/OpenFOAM/OpenFOAM-v2506/OpenFOAM-JV/WPP-v2/constant/extendedFeatureEdgeMesh/turbine.extendedFeatureEdgeMesh"
+
+Writing featureEdgeMesh to "/home/jorge/OpenFOAM/OpenFOAM-v2506/OpenFOAM-JV/WPP-v2/constant/triSurface/turbine.eMesh"
+ExecutionTime = 0.01 s  ClockTime = 0 s
+
+End
+

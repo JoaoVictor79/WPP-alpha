@@ -1,0 +1,57 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2506                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _615aae61d7-20250627 OPENFOAM=2506 version=v2506
+Arch   : "LSB;label=32;scalar=64"
+Exec   : renumberMesh -overwrite
+Date   : Jul 19 2025
+Time   : 20:01:29
+Host   : Jorge-PC
+PID    : 24073
+I/O    : uncollated
+Case   : /home/jorge/OpenFOAM/OpenFOAM-v2506/OpenFOAM-JV/WPP-v2
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = constant
+
+Mesh region0 size: 3433179
+Before renumbering
+    band           : 2170582
+    profile        : 1.47728e+12
+
+Using renumber-method: CuthillMcKee [default]
+
+Reading fields
+
+After renumbering
+    band           : 24823
+    profile        : 6.41303e+10
+
+Writing mesh to "constant"
+Reading hexRef8 data : cellLevel
+Reading hexRef8 data : pointLevel
+Reading hexRef8 data : level0Edge
+
+Timings:
+    read mesh   : 0.434121
+    read fields : 8.9798e-05
+    decompose   : 0
+    cell-cells  : 0
+    renumber    : 0.729871
+    write       : 6.7932
+TotalTime = 9.75659 s
+
+ExecutionTime = 3.43 s  ClockTime = 10 s
+
+End
+
